@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: movie-service
+  profiles:
+    active: dev
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+tmdb:
+  base-url: https://api.themoviedb.org/3
+  image-base-url: https://image.tmdb.org/t/p/w500
+  token: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMzE4MWM5MjA0ZWQ5YmQzMTViY2E0MDZlYjFjYTZkYyIsIm5iZiI6MTc5MTExNTk3NS4yNTYsInN1YiI6IjZhYzI0MmM3YWU3MDY3ZWVmZDJlNzIwNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HBE_zNrctqPHqwNbbxbpcKAJwUk41JoMeMFzUA1W9RA

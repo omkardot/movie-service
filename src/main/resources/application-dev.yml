@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/moviedb
+    username: movie
+    password: movie
+  jpa:
+    hibernate:
+      ddl-auto: update   # fine for early learning; we'll replace it later
+    show-sql: true
